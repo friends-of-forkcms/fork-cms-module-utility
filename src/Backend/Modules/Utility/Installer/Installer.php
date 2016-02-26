@@ -5,7 +5,6 @@ namespace Backend\Modules\Utility\Installer;
 use Backend\Core\Installer\ModuleInstaller;
 use Backend\Core\Engine\Model as BackendModel;
 
-
 /**
  * Installer for the Cache Clear module
  *
@@ -31,6 +30,5 @@ class Installer extends ModuleInstaller
         $navigationSettingsId = $this->setNavigation(null, 'Settings');
         $navigationModuleId = $this->setNavigation($navigationSettingsId, 'Utility', 'utility/clear_cache');
         $this->setNavigation($navigationModuleId, 'ClearCache', 'utility/clear_cache');
-
     }
 }
