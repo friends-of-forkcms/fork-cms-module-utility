@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<locale>
+	<Backend>
+		<Utility>
+			<item type="message" name="Success">
+				<translation language="en"><![CDATA[Cache is cleared.]]></translation>
+				<translation language="nl"><![CDATA[De cache is geleegd.]]></translation>
+			</item>
+			<item type="label" name="ClearCache">
+				<translation language="nl"><![CDATA[clear cache]]></translation>
+				<translation language="en"><![CDATA[clear cache]]></translation>
+			</item>
+		</Utility>
+		<Core>
+			<item type="label" name="Utility">
+				<translation language="nl"><![CDATA[utility]]></translation>
+				<translation language="en"><![CDATA[utility]]></translation>
+			</item>
+			<item type="label" name="Clear">
+				<translation language="nl"><![CDATA[clear]]></translation>
+				<translation language="en"><![CDATA[clear]]></translation>
+			</item>
+		</Core>
+	</Backend>
+	<Frontend>
+		<core>
+		</core>
+	</Frontend>
+</locale>
