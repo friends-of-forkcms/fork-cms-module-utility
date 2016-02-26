@@ -9,7 +9,7 @@ use Symfony\Component\Filesystem\Exception\IOExceptionInterface;
 use Symfony\Component\Finder\Finder;
 
 /**
- * In this file we store all generic functions that we will be using in the Facebook Feed module
+ * In this file we store all generic functions that we will be using in the Utility module
  *
  * @author Frederik Heyninck <frederik@figure8.be>
  */
