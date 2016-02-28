@@ -11,7 +11,6 @@ use Backend\Modules\Utility\Engine\Model as BackendCacheClearModel;
 
 class ClearCache extends BackendBaseActionEdit
 {
-
     /**
      * Execute the action
      */

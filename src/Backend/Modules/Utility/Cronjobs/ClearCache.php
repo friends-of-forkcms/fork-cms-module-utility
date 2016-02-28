@@ -8,7 +8,6 @@ use Backend\Modules\Utility\Engine\Model as BackendCacheClearModel;
 
 class ClearCache extends BackendBaseCronjob
 {
-
     /*
         SITE_URL/backend/cronjob?module=Utility&action=ClearCache
     */
