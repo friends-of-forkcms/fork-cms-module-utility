@@ -2,7 +2,6 @@
 
 namespace Backend\Modules\Utility\Engine;
 
-use Backend\Core\Engine\Model as BackendModel;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Filesystem\Exception\IOExceptionInterface;
@@ -10,8 +9,6 @@ use Symfony\Component\Finder\Finder;
 
 /**
  * In this file we store all generic functions that we will be using in the Utility module
- *
- * @author Frederik Heyninck <frederik@figure8.be>
  */
 class Model
 {
@@ -24,20 +21,20 @@ class Model
         $pathBackend = BACKEND_PATH . '/Cache';
 
         $folders = array(
-                        $pathFrontend . '/CompiledTemplates',
-                        $pathFrontend . '/CachedTemplates',
-                        $pathFrontend . '/Locale',
-                        $pathFrontend . '/MinifiedCSS',
-                        $pathFrontend . '/MinifiedJs',
-                        $pathFrontend . '/Search',
-                        $pathBackend . '/CompiledTemplates',
-                        $pathBackend . '/Locale',
-                        $pathBackend . '/MinifiedCSS',
-                        $pathBackend . '/MinifiedJs',
-                        //PATH_WWW . '/app/cache'
-                    );
+            $pathFrontend . '/CompiledTemplates',
+            $pathFrontend . '/CachedTemplates',
+            $pathFrontend . '/Locale',
+            $pathFrontend . '/MinifiedCSS',
+            $pathFrontend . '/MinifiedJs',
+            $pathFrontend . '/Search',
+            $pathBackend . '/CompiledTemplates',
+            $pathBackend . '/Locale',
+            $pathBackend . '/MinifiedCSS',
+            $pathBackend . '/MinifiedJs',
+            //PATH_WWW . '/app/cache'
+        );
 
-        foreach ($folders  as $folder) {
+        foreach ($folders as $folder) {
             if ($fs->exists($folder)) {
                 $content = $finder->in($folder);
                 foreach ($content as $file) {

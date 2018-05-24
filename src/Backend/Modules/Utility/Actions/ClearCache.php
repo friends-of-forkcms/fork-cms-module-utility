@@ -11,7 +11,6 @@ use Backend\Modules\Utility\Engine\Model as BackendCacheClearModel;
 
 class ClearCache extends BackendBaseActionEdit
 {
-
     /**
      * Execute the action
      */
@@ -25,26 +24,16 @@ class ClearCache extends BackendBaseActionEdit
         $this->display();
     }
 
-    /**
-     * Load the form
-     */
     private function loadForm()
     {
-        // create form
         $this->frm = new BackendForm('settings');
     }
 
-    /**
-     * Parse the form
-     */
     protected function parse()
     {
-        // parse the form
         $this->tpl->assign('cleared', BackendModel::getModuleSetting('Utility', 'last_cleared', false));
         $this->frm->parse($this->tpl);
     }
-
-
 
     /**
      * Validates the form

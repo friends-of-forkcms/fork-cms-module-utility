@@ -6,8 +6,6 @@ use Backend\Core\Engine\Base\Config as BaseConfig;
 
 /**
  * This is the configuration-object for the Facebook Feed module
- *
- * @author Frederik Heyninck <frederik@figure8.be>
  */
 final class Config extends BaseConfig
 {

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module>
-	<name>Facebook Feed</name>
+	<name>Utility</name>
 	<version>1.0.0</version>
 	<requirements>
-		<minimum_version>versionname</minimum_version>
+		<minimum_version>4.0.0</minimum_version>
 	</requirements>
 	<description>
-		<![CDATA[Do some utility stuff.]]>
+		<![CDATA[Do some utility stuff like clearing the front-and backend cache.]]>
 	</description>
 	<authors>
 		<author>
